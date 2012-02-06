@@ -7,14 +7,18 @@
 //
 
 #import "WMAppDelegate.h"
+#import "WMGameWindowController.h"
 
 @implementation WMAppDelegate
 
-@synthesize window = _window;
+@synthesize windowController=_windowController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    WMGameWindowController *windowController = [[WMGameWindowController alloc] initWithWindowNibName:@"MainWindow"];
+//    self.window = windowController.window;
+    [windowController showWindow:self];
+    self.windowController = windowController;
 }
 
 @end

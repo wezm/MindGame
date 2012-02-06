@@ -1,5 +1,5 @@
 //
-//  WMAppDelegate.h
+//  WMTileView.h
 //  MindGame
 //
 //  Created by Wesley Moore on 6/02/12.
@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WMTile.h"
 
-@interface WMAppDelegate : NSObject <NSApplicationDelegate>
+@interface WMTileView : NSView
 
-@property (strong) IBOutlet NSWindowController *windowController;
+@property(nonatomic, strong) WMTile *tile;
 
 @end
