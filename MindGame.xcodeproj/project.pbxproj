@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1B77DBD14DF694E002B83EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B77DBC14DF694E002B83EE /* Cocoa.framework */; };
+		B1B77DC714DF694E002B83EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DC514DF694E002B83EE /* InfoPlist.strings */; };
+		B1B77DC914DF694E002B83EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DC814DF694E002B83EE /* main.m */; };
+		B1B77DCD14DF694E002B83EE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DCB14DF694E002B83EE /* Credits.rtf */; };
+		B1B77DD014DF694E002B83EE /* WMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DCF14DF694E002B83EE /* WMAppDelegate.m */; };
+		B1B77DD314DF694E002B83EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DD114DF694E002B83EE /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1B77DB814DF694E002B83EE /* MindGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B77DBC14DF694E002B83EE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B1B77DBF14DF694E002B83EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B1B77DC014DF694E002B83EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B1B77DC114DF694E002B83EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1B77DC414DF694E002B83EE /* MindGame-Info.plist */ = {isa = PBXFileReference; path = "MindGame-Info.plist"; sourceTree = "<group>"; };
+		B1B77DC614DF694E002B83EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1B77DC814DF694E002B83EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1B77DCA14DF694E002B83EE /* MindGame-Prefix.pch */ = {isa = PBXFileReference; path = "MindGame-Prefix.pch"; sourceTree = "<group>"; };
+		B1B77DCC14DF694E002B83EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B1B77DCE14DF694E002B83EE /* WMAppDelegate.h */ = {isa = PBXFileReference; path = WMAppDelegate.h; sourceTree = "<group>"; };
+		B1B77DCF14DF694E002B83EE /* WMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMAppDelegate.m; sourceTree = "<group>"; };
+		B1B77DD214DF694E002B83EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1B77DB514DF694E002B83EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B77DBD14DF694E002B83EE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1B77DAD14DF694E002B83EE = {
+			isa = PBXGroup;
+			children = (
+				B1B77DC214DF694E002B83EE /* MindGame */,
+				B1B77DBB14DF694E002B83EE /* Frameworks */,
+				B1B77DB914DF694E002B83EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1B77DB914DF694E002B83EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1B77DB814DF694E002B83EE /* MindGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1B77DBB14DF694E002B83EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B77DBC14DF694E002B83EE /* Cocoa.framework */,
+				B1B77DBE14DF694E002B83EE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1B77DBE14DF694E002B83EE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B77DBF14DF694E002B83EE /* AppKit.framework */,
+				B1B77DC014DF694E002B83EE /* CoreData.framework */,
+				B1B77DC114DF694E002B83EE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B1B77DC214DF694E002B83EE /* MindGame */ = {
+			isa = PBXGroup;
+			children = (
+				B1B77DCE14DF694E002B83EE /* WMAppDelegate.h */,
+				B1B77DCF14DF694E002B83EE /* WMAppDelegate.m */,
+				B1B77DD114DF694E002B83EE /* MainMenu.xib */,
+				B1B77DC314DF694E002B83EE /* Supporting Files */,
+			);
+			path = MindGame;
+			sourceTree = "<group>";
+		};
+		B1B77DC314DF694E002B83EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B77DC414DF694E002B83EE /* MindGame-Info.plist */,
+				B1B77DC514DF694E002B83EE /* InfoPlist.strings */,
+				B1B77DC814DF694E002B83EE /* main.m */,
+				B1B77DCA14DF694E002B83EE /* MindGame-Prefix.pch */,
+				B1B77DCB14DF694E002B83EE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1B77DB714DF694E002B83EE /* MindGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B77DD614DF694E002B83EE /* Build configuration list for PBXNativeTarget "MindGame" */;
+			buildPhases = (
+				B1B77DB414DF694E002B83EE /* Sources */,
+				B1B77DB514DF694E002B83EE /* Frameworks */,
+				B1B77DB614DF694E002B83EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindGame;
+			productName = MindGame;
+			productReference = B1B77DB814DF694E002B83EE /* MindGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1B77DAF14DF694E002B83EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = TrikeApps;
+			};
+			buildConfigurationList = B1B77DB214DF694E002B83EE /* Build configuration list for PBXProject "MindGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1B77DAD14DF694E002B83EE;
+			productRefGroup = B1B77DB914DF694E002B83EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1B77DB714DF694E002B83EE /* MindGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1B77DB614DF694E002B83EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B77DC714DF694E002B83EE /* InfoPlist.strings in Resources */,
+				B1B77DCD14DF694E002B83EE /* Credits.rtf in Resources */,
+				B1B77DD314DF694E002B83EE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1B77DB414DF694E002B83EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B77DC914DF694E002B83EE /* main.m in Sources */,
+				B1B77DD014DF694E002B83EE /* WMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1B77DC514DF694E002B83EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B77DC614DF694E002B83EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1B77DCB14DF694E002B83EE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B77DCC14DF694E002B83EE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B1B77DD114DF694E002B83EE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B77DD214DF694E002B83EE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1B77DD414DF694E002B83EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B1B77DD514DF694E002B83EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B1B77DD714DF694E002B83EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindGame/MindGame-Prefix.pch";
+				INFOPLIST_FILE = "MindGame/MindGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1B77DD814DF694E002B83EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindGame/MindGame-Prefix.pch";
+				INFOPLIST_FILE = "MindGame/MindGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1B77DB214DF694E002B83EE /* Build configuration list for PBXProject "MindGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B77DD414DF694E002B83EE /* Debug */,
+				B1B77DD514DF694E002B83EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B77DD614DF694E002B83EE /* Build configuration list for PBXNativeTarget "MindGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B77DD714DF694E002B83EE /* Debug */,
+				B1B77DD814DF694E002B83EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1B77DAF14DF694E002B83EE /* Project object */;
+}
