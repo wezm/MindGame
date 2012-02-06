@@ -20,7 +20,7 @@ static NSUInteger TILE_COUNT = 9;
     if (self != nil) {
         NSMutableArray *tiles = [[NSMutableArray alloc] initWithCapacity:TILE_COUNT];
         for (int i = 0; i < TILE_COUNT; i++) {
-            [tiles addObject:[[WMTile alloc] initWithIndex:i]];
+            [tiles addObject:[WMTile new]];
         }
         self.tiles = tiles;
     }

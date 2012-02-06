@@ -13,17 +13,6 @@
 @implementation WMTile
 
 @synthesize color=_color;
-@synthesize index=_index;
-
-- (id)initWithIndex:(NSUInteger)index {
-    self = [super init];
-    if (self) {
-        self.index = index;
-        self.color = WMTileWhiteColor;
-    }
-    
-    return self;
-}
 
 - (void)tap
 {

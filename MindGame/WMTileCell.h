@@ -8,6 +8,6 @@
 
 #import <AppKit/AppKit.h>
 
-@interface WMTileCell : NSCell
+@interface WMTileCell : NSButtonCell
 
 @end

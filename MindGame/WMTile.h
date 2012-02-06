@@ -17,9 +17,7 @@ typedef enum {
 } WMTileColor;
 
 @property(assign) WMTileColor color;
-@property(assign) NSUInteger index;
 
-- (id)initWithIndex:(NSUInteger)index;
 - (void)tap;
 - (NSColor *)NSColor;
 

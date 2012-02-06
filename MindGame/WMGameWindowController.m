@@ -7,13 +7,13 @@
 //
 
 #import "WMGameWindowController.h"
-#import "WMTileView.h"
 #import "WMGame.h"
+#import "WMTileButton.h"
 
 @interface WMGameWindowController ()
 
 - (void)stopObservingTiles;
-- (NSArray *)tileViews;
+//- (NSArray *)tileViews;
 
 @end
 
@@ -37,6 +37,13 @@
 - (IBAction)newGame:(id)sender
 {
     self.game = [WMGame new];
+    for (int i = 1; i <= 9; i++) {
+        WMTileButton *tileButton = [[self.window contentView] viewWithTag:i];
+        tileButton.tile = [[self.game tiles] objectAtIndex:i - 1];
+        if (i == 1) {
+            NSLog(@"Bezel style :%d", (int)[tileButton bezelStyle]);
+        }
+    }
 }
 
 - (IBAction)tileTapped:(id)sender
@@ -80,32 +87,32 @@
     [self observeTiles];
 }
 
-- (NSArray *)tileViews
-{
-    NSArray *subviews = [[self.window contentView] subviews];
-    NSIndexSet *indexSet = [subviews indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-        return [obj isKindOfClass:[WMTileView class]];
-    }];
-    return [[subviews objectsAtIndexes:indexSet] sortedArrayUsingComparator:^NSComparisonResult(WMTileView *obj1, WMTileView *obj2) {
-        NSUInteger index1 = obj1.tile.index;
-        NSUInteger index2 = obj2.tile.index;
-        
-        if (index1 == index2) {
-            return NSOrderedSame;
-        }
-        else if (index1 > index2) {
-            return NSOrderedAscending;
-        }
-        else {
-            return NSOrderedDescending;
-        }
-    }];
-}
-
-- (WMTileView *)tileViewWithIndex:(NSUInteger)index
-{
-    return [[self tileViews] objectAtIndex:index];
-}
+//- (NSArray *)tileViews
+//{
+//    NSArray *subviews = [[self.window contentView] subviews];
+//    NSIndexSet *indexSet = [subviews indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+//        return [obj isKindOfClass:[WMTileView class]];
+//    }];
+//    return [[subviews objectsAtIndexes:indexSet] sortedArrayUsingComparator:^NSComparisonResult(WMTileView *obj1, WMTileView *obj2) {
+//        NSUInteger index1 = obj1.tile.index;
+//        NSUInteger index2 = obj2.tile.index;
+//        
+//        if (index1 == index2) {
+//            return NSOrderedSame;
+//        }
+//        else if (index1 > index2) {
+//            return NSOrderedAscending;
+//        }
+//        else {
+//            return NSOrderedDescending;
+//        }
+//    }];
+//}
+//
+//- (WMTileView *)tileViewWithIndex:(NSUInteger)index
+//{
+//    return [[self tileViews] objectAtIndex:index];
+//}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {

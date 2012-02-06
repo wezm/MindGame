@@ -7,33 +7,18 @@
 //
 
 #import "WMTileCell.h"
+#import "WMTileButton.h"
 
 @implementation WMTileCell
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
-    if (self) {
-        
-    }
-    return self;
-}
-
-- (id)initTextCell:(NSString *)string
+- (void)drawInteriorWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
+    NSAssert([controlView isKindOfClass:[WMTileButton class]], @"Not a tile button");
+    WMTileButton *tileButton = (WMTileButton *)controlView;
     
-}
-
-- (id)initImageCell:(NSImage *)image
-{
-    
+    NSBezierPath *bezierPath = [NSBezierPath bezierPathWithRect:cellFrame];
+    [[[tileButton tile] NSColor] setFill];
+    [bezierPath fill];
 }
 
 @end

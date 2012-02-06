@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1053CB314E06ED7004DB066 /* WMTileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1053CB214E06ED7004DB066 /* WMTileCell.m */; };
+		B1053CB514E075CB004DB066 /* WMTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77E0514DFAC6A002B83EE /* WMTileButton.m */; };
 		B1B77DBD14DF694E002B83EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B77DBC14DF694E002B83EE /* Cocoa.framework */; };
 		B1B77DC714DF694E002B83EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DC514DF694E002B83EE /* InfoPlist.strings */; };
 		B1B77DC914DF694E002B83EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DC814DF694E002B83EE /* main.m */; };
@@ -18,7 +19,6 @@
 		B1B77DE114DF6B0E002B83EE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DDF14DF6B0E002B83EE /* MainWindow.xib */; };
 		B1B77DE414DF6B79002B83EE /* WMGameWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DE314DF6B79002B83EE /* WMGameWindowController.m */; };
 		B1B77DE714DF7332002B83EE /* WMTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DE614DF7332002B83EE /* WMTile.m */; };
-		B1B77E0614DFAC6A002B83EE /* WMTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77E0514DFAC6A002B83EE /* WMTileView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		B1B77DE314DF6B79002B83EE /* WMGameWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMGameWindowController.m; sourceTree = "<group>"; };
 		B1B77DE514DF7332002B83EE /* WMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTile.h; sourceTree = "<group>"; };
 		B1B77DE614DF7332002B83EE /* WMTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTile.m; sourceTree = "<group>"; };
-		B1B77E0414DFAC6A002B83EE /* WMTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTileView.h; sourceTree = "<group>"; };
-		B1B77E0514DFAC6A002B83EE /* WMTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTileView.m; sourceTree = "<group>"; };
+		B1B77E0414DFAC6A002B83EE /* WMTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTileButton.h; sourceTree = "<group>"; };
+		B1B77E0514DFAC6A002B83EE /* WMTileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTileButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				B1B77DE314DF6B79002B83EE /* WMGameWindowController.m */,
 				B1B77DE514DF7332002B83EE /* WMTile.h */,
 				B1B77DE614DF7332002B83EE /* WMTile.m */,
-				B1B77E0414DFAC6A002B83EE /* WMTileView.h */,
-				B1B77E0514DFAC6A002B83EE /* WMTileView.m */,
+				B1B77E0414DFAC6A002B83EE /* WMTileButton.h */,
+				B1B77E0514DFAC6A002B83EE /* WMTileButton.m */,
 				B1053CB114E06ED7004DB066 /* WMTileCell.h */,
 				B1053CB214E06ED7004DB066 /* WMTileCell.m */,
 			);
@@ -200,8 +200,8 @@
 				B1B77DDE14DF6A4F002B83EE /* WMGame.m in Sources */,
 				B1B77DE414DF6B79002B83EE /* WMGameWindowController.m in Sources */,
 				B1B77DE714DF7332002B83EE /* WMTile.m in Sources */,
-				B1B77E0614DFAC6A002B83EE /* WMTileView.m in Sources */,
 				B1053CB314E06ED7004DB066 /* WMTileCell.m in Sources */,
+				B1053CB514E075CB004DB066 /* WMTileButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
