@@ -14,6 +14,7 @@
 @property (strong) NSMutableArray *tiles;
 
 - (void)tapTileAtIndex:(NSUInteger)index;
+- (void)setState:(WMTileColor *)state;
 - (void)solve;
 
 @end

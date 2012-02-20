@@ -44,14 +44,17 @@ static NSUInteger TILE_COUNT = 9;
     NSLog(@"Tapped tile %lu", (unsigned long)index);
 }
 
-//- (NSColor *)tileColorAtIndex:(NSUInteger)index
-//{
-//    return [[self.tiles objectAtIndex:index] NSColor];
-//}
+- (void)setState:(WMTileColor *)state
+{
+    [self.tiles enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
+        WMTile *tile = obj;
+        tile.color = state[index];
+    }];
+}
 
 - (void)solve
 {
-    
+    // TODO: Given the current state, find the specific and fewest touches to get to all white
 }
 
 @end

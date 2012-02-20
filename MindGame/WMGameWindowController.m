@@ -36,14 +36,32 @@
 
 - (IBAction)newGame:(id)sender
 {
-    self.game = [WMGame new];
+    WMGame *game = [WMGame new];
+    
+    /*
+     B W W
+     W W W
+     R W W
+    */
+    
+    WMTileColor state[9] = {
+        WMTileBlueColor,
+        WMTileWhiteColor,
+        WMTileWhiteColor,
+        WMTileWhiteColor,
+        WMTileWhiteColor,
+        WMTileWhiteColor,
+        WMTileRedColor,
+        WMTileWhiteColor,
+        WMTileWhiteColor
+    };
+    
+    [game setState:state];
     for (int i = 1; i <= 9; i++) {
         WMTileButton *tileButton = [[self.window contentView] viewWithTag:i];
-        tileButton.tile = [[self.game tiles] objectAtIndex:i - 1];
-        if (i == 1) {
-            NSLog(@"Bezel style :%d", (int)[tileButton bezelStyle]);
-        }
+        tileButton.tile = [[game tiles] objectAtIndex:i - 1];
     }
+    self.game = game;
 }
 
 - (IBAction)tileTapped:(id)sender
@@ -52,7 +70,7 @@
     NSButton *tileButton = sender;
     NSAssert([tileButton tag] > 0, @"Button is not tagged");
     
-    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSLog(@"%@ %d", NSStringFromSelector(_cmd), (int)[tileButton tag]);
     [self.game tapTileAtIndex:[tileButton tag] - 1];
 }
 
