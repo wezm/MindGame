@@ -23,14 +23,6 @@
     [self.tile removeObserver:self forKeyPath:@"color"];
 }
 
-//- (void)drawRect:(NSRect)dirtyRect
-//{
-//    // Drawing code here.
-//    NSBezierPath *path = [NSBezierPath bezierPathWithRect:dirtyRect];
-//    [[self.tile NSColor] setFill];
-//    [path fill];
-//}
-//
 - (void)setTile:(WMTile *)tile
 {
     if (tile == _tile) return;
