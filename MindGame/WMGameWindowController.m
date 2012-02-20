@@ -10,13 +10,6 @@
 #import "WMGame.h"
 #import "WMTileButton.h"
 
-@interface WMGameWindowController ()
-
-- (void)stopObservingTiles;
-//- (NSArray *)tileViews;
-
-@end
-
 @implementation WMGameWindowController
 
 @synthesize game=_game;
@@ -27,11 +20,6 @@
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     [self newGame:self];
-}
-
-- (void)dealloc
-{
-    [self stopObservingTiles];
 }
 
 - (IBAction)newGame:(id)sender
