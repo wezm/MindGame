@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B1053CB314E06ED7004DB066 /* WMTileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1053CB214E06ED7004DB066 /* WMTileCell.m */; };
 		B1053CB514E075CB004DB066 /* WMTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77E0514DFAC6A002B83EE /* WMTileButton.m */; };
+		B1053CED14E0FB9A004DB066 /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1053CEC14E0FB9A004DB066 /* Nu.framework */; };
 		B1B77DBD14DF694E002B83EE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B77DBC14DF694E002B83EE /* Cocoa.framework */; };
 		B1B77DC714DF694E002B83EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B77DC514DF694E002B83EE /* InfoPlist.strings */; };
 		B1B77DC914DF694E002B83EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B77DC814DF694E002B83EE /* main.m */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B1053CB114E06ED7004DB066 /* WMTileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTileCell.h; sourceTree = "<group>"; };
 		B1053CB214E06ED7004DB066 /* WMTileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTileCell.m; sourceTree = "<group>"; };
+		B1053CEC14E0FB9A004DB066 /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = Library/Frameworks/Nu.framework; sourceTree = SDKROOT; };
 		B1B77DB814DF694E002B83EE /* MindGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B77DBC14DF694E002B83EE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B1B77DBF14DF694E002B83EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1053CED14E0FB9A004DB066 /* Nu.framework in Frameworks */,
 				B1B77DBD14DF694E002B83EE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +83,7 @@
 		B1B77DBB14DF694E002B83EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1053CEC14E0FB9A004DB066 /* Nu.framework */,
 				B1B77DBC14DF694E002B83EE /* Cocoa.framework */,
 				B1B77DBE14DF694E002B83EE /* Other Frameworks */,
 			);
