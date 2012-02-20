@@ -41,7 +41,7 @@ static NSUInteger TILE_COUNT = 9;
     }
 
     [[self.tiles objectAtIndex:index] tap];
-    NSLog(@"Tapped tile %lu", (unsigned long)index);
+    //NSLog(@"Tapped tile %lu", (unsigned long)index);
 }
 
 - (void)setState:(WMTileColor *)state

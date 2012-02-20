@@ -70,7 +70,7 @@
     NSButton *tileButton = sender;
     NSAssert([tileButton tag] > 0, @"Button is not tagged");
     
-    NSLog(@"%@ %d", NSStringFromSelector(_cmd), (int)[tileButton tag]);
+    //NSLog(@"%@ %d", NSStringFromSelector(_cmd), (int)[tileButton tag]);
     [self.game tapTileAtIndex:[tileButton tag] - 1];
 }
 
